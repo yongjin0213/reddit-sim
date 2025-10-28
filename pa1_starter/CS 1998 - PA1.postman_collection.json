@@ -1,0 +1,136 @@
+{
+	"info": {
+		"_postman_id": "e2436402-daf5-42d9-a512-acb3620dd9a0",
+		"name": "CS 1998 : PA1",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "46094938",
+		"_collection_link": "https://yongjinlee-5560004.postman.co/workspace/Yongjin-Lee's-Workspace~a2f128f6-b271-4aa9-8e8a-4637c531bc6a/collection/46094938-e2436402-daf5-42d9-a512-acb3620dd9a0?action=share&source=collection_link&creator=46094938"
+	},
+	"item": [
+		{
+			"name": "Get Posts",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"title\": \"I love my dog!\",\n  \"link\": \"https://i.imgur.com/XsaLqi1.jpg\",\n  \"username\": \"raahi014\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://10.48.156.33:5000/posts/",
+					"protocol": "http",
+					"host": [
+						"10",
+						"48",
+						"156",
+						"33"
+					],
+					"port": "5000",
+					"path": [
+						"posts",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Post",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"title\": \"I love my dog!\",\n  \"link\": \"https://i.imgur.com/XsaLqi1.jpg\",\n  \"username\": \"raahi014\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://10.48.156.33:5000/posts/",
+					"protocol": "http",
+					"host": [
+						"10",
+						"48",
+						"156",
+						"33"
+					],
+					"port": "5000",
+					"path": [
+						"posts",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Post by ID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://10.48.156.33:5000/posts/1",
+					"protocol": "http",
+					"host": [
+						"10",
+						"48",
+						"156",
+						"33"
+					],
+					"port": "5000",
+					"path": [
+						"posts",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Post by ID",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Get Comment",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Create Coment",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Edit Comment",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		}
+	]
+}
